@@ -1,0 +1,9 @@
+<input id="file-input" type="file" multiple (change)="handleFileSelect($any($event.target).files)"/>
+<div *ngIf="files.length > 0">
+    <p *ngFor="let file of files">{{file.name}} ({{file.size}} KB, {{file.type}})
+    <button (click)="handleUploadFile(file)" mat-icon-button color="primary">
+        <mat-icon>file_upload</mat-icon>
+    </button>
+    <br/>
+    </p>
+</div>

@@ -1,0 +1,7 @@
+.row-height {
+    height: 100%;
+    overflow: hidden;
+}
+.card-height {
+    min-height: 90%;
+}
